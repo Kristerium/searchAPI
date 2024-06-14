@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikkel Søk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="wikitermsearch">
+    <header>
+      <h1>Wikipedia - Begreps søk</h1>
+      <p>Wikipedia begreps søk har foreløpig noen feil. Vi jobber med å fikse problemet!</p>
+    </header>
+    <div id="language-selection">
+      <label for="language">Select Language:</label>
+      <select id="language">
+        <option value="no">Norwegian</option>
+        <!-- Add more options for other languages as needed -->
+      </select>
+    </div>
+
+    <div id="search-container">
+      <input type="text" id="entry" placeholder="Søk etter begreper...">
+    </div>
+
+    <div id="result-container">
+      <div id="answer"></div>
+    </div>
+
+  </div>
+
+
+
+  <main>
+    <header>
+      <h1>SNL - Universal Søk</h1>
+      <p>SNL eller Store Norske Leksikon søk er et velfungerende søk system for artikler</p>
+    </header>
+    <section id="search-section">
+      <form id="search-form">
+        <input type="text" id="search-query" placeholder="Søk etter artikler..." required>
+      </form>
+    </section>
+
+    <section id="results-section">
+      <div id="results"></div>
+    </section>
+
+  </main>
+
+  <script src="snl.js"></script>
+  <script src="wikipedia.js"></script>
+</body>
+
+</html>
