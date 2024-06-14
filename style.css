@@ -1,109 +1,117 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #e0eafc, #cfdef3);
-    color: #444;
+    background: #121212;
+    color: #e0e0e0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px;
   }
   
   header {
     padding: 20px;
     text-align: center;
-    /*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 20px;
-    color: black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    background: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   }
   
   header h1 {
     margin: 0;
-    font-size: 1.5em;
-    background: #6a82fb;
+    font-size: 1.8em;
     padding: 10px;
     border-radius: 10px;
     color: white;
   }
   
   header p {
-    font-size: 20px;
-    width: 500px;
+    font-size: 1em;
     text-align: center;
-    margin-left: 135px;
+    color: #b0b0b0;
   }
   
-  main {
-    padding: 20px;
+  main, .wikitermsearch {
     width: 80%;
     max-width: 800px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-  }
-  
-  #search-section {
+    padding: 20px;
     margin-bottom: 20px;
   }
   
-  #search-form {
+  #search-section, #search-container {
+    margin-bottom: 20px;
+  }
+  
+  #search-form, #search-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  #search-query,
-  #entry {
+  #search-query, #entry {
     padding: 10px;
     width: 70%;
     border: 2px solid #6a82fb;
     border-radius: 5px;
-    font-size: 1.3em;
+    font-size: 1em;
     margin-right: 10px;
+    background: #2a2a2a;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease;
+  }
+  
+  #search-query:focus, #entry:focus {
+    border-color: #fc5c7d;
+    outline: none;
   }
   
   #entry {
     margin-bottom: 20px;
   }
   
-  #results-section {
+  #results-section, #result-container {
     margin-top: 20px;
   }
   
-  #results-section h2 {
+  #results-section h2, #result-container h2 {
     text-align: center;
     color: #6a82fb;
   }
   
-  .result-item {
-    background: #f0f4ff;
+  .result-item, #answer {
+    background: #2a2a2a;
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #dfe3ee;
+    border: 1px solid #444;
     border-radius: 5px;
     transition: box-shadow 0.3s ease;
+    font-size: 1em;
   }
   
-  .result-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .result-item:hover, #answer:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   }
   
   .result-item h3 {
     margin: 0;
     color: #6a82fb;
-    font-size: 20px;
+    font-size: 1.2em;
   }
   
   .result-item p {
-    color: #666;
-    font-size: 17px;
+    color: #b0b0b0;
+    font-size: 1em;
   }
   
   .result-item a {
-    color: #6a82fb;
+    color: #fc5c7d;
     text-decoration: none;
     font-weight: bold;
   }
@@ -112,46 +120,11 @@ body {
     text-decoration: underline;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .wikitermsearch {
-    margin-bottom: 40px;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  #search-container {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  
   #language-selection {
     display: none;
   }
   
-  
   #answer {
     display: none;
-    background: #f0f4ff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #dfe3ee;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease;
-    font-size: 20px;
   }
+  
